@@ -1,0 +1,65 @@
+.navbar-nav {
+    margin-left: 400px !important;
+}
+
+#yt {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px 0 0 100px;
+    margin-bottom: 20vh;
+    
+}
+
+.redes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    
+}
+
+.seguinos {
+    text-align: center;
+    margin: 20px;
+}
+
+/*NOTICIAS.HTML*/
+
+.card, .mb-3 {
+    width: 30%;
+}
+
+/* PROXIMASFECHAS.HTML*/
+
+#foto3 {
+    width: 100% !important;
+}
+
+        
+.banner { 
+        
+    width: 500px;
+    height: 500px;
+   
+  }
+
+.fondoFechas {
+    background-color: black;
+    color: white;
+}
+
+/*MERCH.HTML*/
+.remera {
+    
+    height: 300px;
+    width: 300px;
+  
+  }
+
+  /*CONTACTO.HTML*/
+.form{
+    margin: 10vh 0 15vh 500px;
+}
