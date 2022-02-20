@@ -1,36 +1,18 @@
-.navbar-nav {
-    margin-left: 400px !important;
-}
 
-#yt {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 10px;
-    padding: 10px 0 0 100px;
-    margin-bottom: 20vh;
-    
-}
 
 .redes {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
-    margin-top: 20px;
+    flex-wrap: wrap;
+    margin-top: 15px;
     
 }
 
-.seguinos {
-    text-align: center;
-    margin: 20px;
-}
 
-/*NOTICIAS.HTML*/
 
-.card, .mb-3 {
-    width: 30%;
-}
+
 
 /* PROXIMASFECHAS.HTML*/
 
@@ -46,20 +28,328 @@
    
   }
 
-.fondoFechas {
-    background-color: black;
-    color: white;
+
+
+@media screen and (max-width: 767px) {
+
+
+/*INDEX.HTML*/
+
+#yt {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-bottom: 20%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    
 }
 
-/*MERCH.HTML*/
-.remera {
-    
-    height: 300px;
-    width: 300px;
+iframe {
+    width: 100%;
+}
+
+.seguinos {
+
+    margin: 20px;
+}
+
+#contacto {
+    text-decoration: none;
+    color: red;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+    /*NOTICIAS.HTML*/
+    .flexnoticias {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+       
+       }
+
+/* PROXIMAS FECHAS*/
+
+.foto3 {
+    width: 100%;
+    height: 100%;
+}
+.fechasflex {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 10vh;
+}
+
+.entradas {
+    text-align: center;
+    padding: 15px 0 60px 0;
+
+
+}
+
+.banner {
+    width: 100%;
+    height: 100%;
+}
+
+#pr {
+    text-align: center;
+}
+
+.botonAnimado {
+    color: red;
+    font-size: 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    animation-duration: 3s;
+    animation-name: animado;
+    animation-iteration-count: infinite;
+
+
+}
+
+@keyframes animado {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+    /*MERCH.HTML*/
+    .remera {
+        height: 60%;
+        width: 100%;
+    }
+
+}
+
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
   
+    #yt {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        gap: 10px;
+        padding: 10px 0 0 0;
+        margin-bottom: 20vh;
+        
+        
+        
+      
+     }
+    iframe {
+        width: 100%;
+    }
+    .seguinos {
+
+        margin: 20px;
+    }
+    #contacto {
+        text-decoration: none;
+        color: red;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    
+
+
+    /*NOTICIAS.HTML*/
+    .flexnoticias {
+
+        display: flex;
+        flex-direction: row;
+         justify-content: space-between;
+        align-items: center;
+     }
+
+    .remera {
+     width: 100%;
+     height: 100%;
+       
+    }
+/* PROXIMAS FECHAS*/
+
+.foto3 {
+    width: 100%;
+    height: 100%;
+}
+.fechasflex {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 10vh;
+    
+}
+
+.entradas {
+    text-align: center;
+    padding: 15px 0 50px 0;
+
+
+}
+
+.banner {
+    width: 100%;
+    height: 100%;
+    
+}
+
+
+#pr {
+    margin: 15px 0 20px 0;
+}
+
+.botonAnimado {
+    color: red;
+    font-size: 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    animation-duration: 3s;
+    animation-name: animado;
+    animation-iteration-count: infinite;
+
+
+}
+
+
+@keyframes animado {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
   }
 
-  /*CONTACTO.HTML*/
-.form{
-    margin: 10vh 0 15vh 500px;
+    /*MERCH.HTML*/
+    .remera {
+        height: 60%;
+        width: 100%;
+    }
+
+    /*CONTACTO.HTML*/
+    .form {
+        margin-left: 30%;
+        margin-top: 8vh;
+        margin-bottom: 10vh;
+        width: 40%;
+    }
+   
+  
+    
+@media screen and (min-width: 1024px) {
+    
+    .navbar-nav {
+        margin-left: 400px !important;
+    }
+    
+    
+    
+
+    #yt {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px;
+        padding: 10px 0 0 100px;
+        margin-bottom: 20vh;
+        
+    }
+    
+    #contacto {
+        text-decoration: none;
+        color: red;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+    .seguinos {
+
+        margin: 20px;
+    }
+    
+    
+    /*NOTICIAS.HTML*/
+
+    .flexnoticias {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+       
+       }
+    
+    /*PROXIMASFECHAS.HTML*/
+    
+    .foto3 { 
+       width: 100%;
+      
+      }
+    
+      .entradas {
+         text-align: center;
+        box-shadow: black 1px 2px 3px 4px;
+        margin: 10px 0 10px 0px;
+        
+        }
+        
+        .banner { 
+        
+          width: 500px;
+          height: 500px;
+         
+        }
+        
+    .fechasflex {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+
+    #pr {
+        margin: 15px 0 20px 0;
+    }
+
+    .botonAnimado {
+        color: red;
+        font-size: 30px;
+        text-decoration: none;
+        text-transform: uppercase;
+        animation-duration: 3s;
+        animation-name: animado;
+        animation-iteration-count: infinite;
+
+
+    }
+
+    @keyframes animado {
+        0% {
+            opacity: 0;
+        }
+    
+        100% {
+            opacity: 1;
+        }
+    }
+  
+    /*MERCH.HTML*/
+    .remera {
+        height: 60%;
+        width: 100%;
+    }
+
+
 }
+
