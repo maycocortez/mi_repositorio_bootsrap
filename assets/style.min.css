@@ -1,0 +1,1 @@
+article{display:flex;flex-direction:row;justify-content:space-around;flex-wrap:wrap}article div{text-align:center;box-shadow:black 1px 2px 3px 4px;margin:10px 0 10px 0px}article div img{width:500px;height:500px}article div a{color:red;font-size:20px;text-decoration:none;text-transform:uppercase}article div a:hover{color:white;background-color:black}
