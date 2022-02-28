@@ -1,6 +1,7 @@
 @import "_variables";
 
-article {
+/*Noticias.html*/
+.fechasflex {
              display: flex;
             flex-direction: row;
             justify-content: space-around;
@@ -34,4 +35,38 @@ article {
                 }
  }
         
-    
+    @mixin recuadroNoticias ($fondo,$color) {
+        background-color: $fondo;
+        color: $color;
+        height: 15%;
+        width: 30%;
+        margin-top: 5vh;
+        text-align: center;
+     
+    }
+
+    .noticia {
+        @include recuadroNoticias(#000,#ffff)
+    }
+
+    .noticia-2 {
+        @include recuadroNoticias(#808080,#ffff)
+    }
+
+    .noticia-3 {
+        @include recuadroNoticias(#000,#ffff)
+    }
+
+    /*Index.html*/
+    .proximoRecital {
+        @extend .noticia;
+       margin-left: 30%;
+        width: 45%;
+    }
+
+    /*Mapa*/
+    $colores:(blanco:#ffff,negro:#000,beigge:#F5F5DC);
+
+    .fondoMerch {
+        background-color: map-get($colores,beigge );
+    }
