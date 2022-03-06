@@ -1,72 +1,567 @@
 @import "_variables";
+@import url('https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@100&display=swap');
+    /*Mapa*/
+    $colores:(blanco:#ffff, gris:#808080,negro:#000,beigge:#F5F5DC , azul:#0000FF,verde:#008000,violeta:#EE82EE,naranja:#ff8000,rojo:#FF0000,blancoHumo:#f5f5f5);
 
-/*Noticias.html*/
-.fechasflex {
-             display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-            flex-wrap: wrap;
-        
-             div{
-                     text-align: center;
-                     box-shadow: $estiloCaja;
-                     margin: $margenCaja;
-                 img {
-                        width: 500px;
-                        height: 500px;
-                    }
-                     
-                        
-                         a {
-                             color: red;
-                             font-size: $tamanoFuente;
-                             text-decoration: none;
-                             text-transform: uppercase;
+.redes {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-top: 15px;
+  
+}
 
-                             &:hover {
-                                 color: white;
-                                 background-color: black;
-                                 
-                             }
-                            }
-                             
-                      
-         
-                }
- }
-        
-    @mixin recuadroNoticias ($fondo,$color) {
-        background-color: $fondo;
-        color: $color;
-        height: 15%;
-        width: 30%;
-        margin-top: 5vh;
-        text-align: center;
+
+
+@media screen and (max-width: 767px) {
+
+
+  .carousel-inner {
+    height: 100vh;
+  }
+  
+    .nav-link {
+        transition: 0.2s;
+    }
+  
+    .nav-link:hover {
+        background-color: red;
+    }
+    
+    .navbar-nav {
+        margin-left: 400px;
+    }      
+  
+    /*INDEX.HTML*/
+
+    .twitter {
+      width: 90%;
+    }
+    
+  
+    #yt {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding-bottom: 20%;
+        padding-top: 30px;
+        height: 0;
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+          iframe {
+              width: 100%;
+          }
+      }
+    
+    #contacto {
+        text-decoration: none;
+        color: red;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+  
+    .seguinos {
+  
+        margin: 20px;
+        font-family: 'Anton', sans-serif;
+  
+        font-family: 'Barlow Condensed', sans-serif;
+    
+        font-family: 'Bebas Neue', cursive;
+    
+        font-family: 'Oswald', sans-serif;
+    
+        font-family: 'Roboto', sans-serif;
+    }
+    
+    
+    /*NOTICIAS.HTML*/
+  
+    .flexnoticias {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;     
+    }
+    .noticia{
+      background-color: #000;
+      color: #ffff;
+      height: 120vh;
+      width: 70%;
+      margin-top: 5vh;
+      text-align: center;
+      
+    }
+    
+    .noticia2 {
+      background-color: #808080;
+      color: #ffff;
+      height: 120vh;
+      width: 70%;
+      margin-top: 5vh;
+      text-align: center;
+      
      
     }
-
-    .noticia {
-        @include recuadroNoticias(#000,#ffff)
+    
+    .noticia3 {
+      background-color: #000;
+      color: #ffff;
+      height: 120vh;
+      width: 70%;
+      margin-top: 5vh;
+      text-align: center;
+     
     }
+  
+  
+    .noticiasTitulo {
+  font-family: 'Smooch Sans',  sans-serif;
+  font-size: 20vh;
+  width: 100%;
+   }
+  
+  
+  
+  
+  .noticiaFoto {
+    width: 100%;
+  
+  }
+  
+  /* DISCOGRAFIA.HTML*/
+  
+  .table {
+    width: 70%;
+  }
+  
+  .spotify {
+    width: 70%;
+  }
+  
+   /*PROXIMASFECHAS.HTML*/
+   
+      
+ .foto3 { 
+        width: 100%;
+       }
+       
+         .fechasflex {
+            display: flex;
+           flex-direction: column;
+           flex-wrap: wrap;
+               .entradas {
+                    text-align: center;
+                    box-shadow: $estiloCaja;
+                    margin: $margenCajaMobile;
+                    width: 80%;
+                 .banner {
+                       width: 100%;
+                       height: 80%;
+                          }
+                      a {
+                            color: red;
+                            font-size: $tamanoFuente;
+                            text-decoration: none;
+                            text-transform: uppercase;
+        
+                            &:hover {
+                                color: white;
+                                background-color: black;
+                             }
+                           }
+                        }
+      }
+    
 
-    .noticia-2 {
-        @include recuadroNoticias(#808080,#ffff)
-    }
+   /*MERCH.HTML*/
+   .remera {
+        height: 60%;
+       width: 85%;
+   }
 
-    .noticia-3 {
-        @include recuadroNoticias(#000,#ffff)
-    }
+  
+   .merchTitulo {
+  font-family: 'Smooch Sans',  sans-serif;
+  font-size: 10vh;
+  width: 100%;
+   }
+  
+   /*CONTACTO.HTML*/
+  
+   .form{
+       width: 100%;
+       margin: auto;
+       padding: 10px 20px;
+       box-sizing: border-box;
+       margin-top: 40px;
+       } 
+       
+       
 
-    /*Index.html*/
-    .proximoRecital {
-        @extend .noticia;
-       margin-left: 30%;
-        width: 45%;
-    }
+  }
 
-    /*Mapa*/
-    $colores:(blanco:#ffff,negro:#000,beigge:#F5F5DC);
+@media screen and (min-width: 768px) and (max-width: 1023px) {
 
-    .fondoMerch {
-        background-color: map-get($colores,beigge );
-    }
+    .carousel-inner {
+        height: 100vh;
+      }
+      
+        .nav-link {
+            transition: 0.2s;
+        }
+      
+        .nav-link:hover {
+            background-color: red;
+        }
+        
+        .navbar-nav {
+            margin-left: 400px;
+        }      
+      
+        .twitter {
+          width: 100%;
+        }
+        
+      
+        #yt {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            padding-bottom: 20%;
+            padding-top: 30px;
+            height: 0;
+            overflow: hidden;
+            width: 100%;
+            height: 100%;
+              iframe {
+                  width: 100%;
+              }
+          }
+        
+        
+        #contacto {
+            text-decoration: none;
+            color: red;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+      
+        .seguinos {
+      
+            margin: 20px;
+            font-family: 'Anton', sans-serif;
+      
+            font-family: 'Barlow Condensed', sans-serif;
+        
+            font-family: 'Bebas Neue', cursive;
+        
+            font-family: 'Oswald', sans-serif;
+        
+            font-family: 'Roboto', sans-serif;
+        }
+        
+        
+        /*NOTICIAS.HTML*/
+        .flexnoticias {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-evenly;
+          align-items: center;     
+      }
+      
+      @mixin recuadroNoticias ($fondo,$color) {
+      background-color: $fondo;
+      color: $color;
+      height: 130vh;
+      width: 85%;
+      margin-top: 5vh;
+      text-align: center;
+      
+      
+      }
+      
+      .noticia {
+      @include recuadroNoticias(#000,#ffff)
+      }
+      
+      .noticia2{
+      @include recuadroNoticias(#808080,#ffff)
+      }
+      
+      .noticia3 {
+      @include recuadroNoticias(#000,#ffff)
+      }
+      
+      
+      
+      .noticiasTitulo {
+      font-family: 'Smooch Sans',  sans-serif;
+      font-size: 200px;
+      width: 100%;
+       }
+      
+      .noticiaFoto {
+        width: 100%;
+      }
+      
+      /* DISCOGRAFIA.HTML*/
+      
+      .table {
+        width: 70%;
+      }
+      
+      .spotify {
+        width: 70%;
+      }
+      
+       /*PROXIMASFECHAS.HTML*/
+       
+       .foto3 { 
+          width: 100%;
+         }
+         
+           .fechasflex {
+              display: flex;
+             flex-direction: row;
+             justify-content: space-evenly;
+             flex-wrap: wrap;
+                 .entradas {
+                      text-align: center;
+                      box-shadow: $estiloCaja;
+                      margin: $margenCaja;
+                   .banner {
+                         width: 100%;
+                         height: 500px;
+                            }
+                        a {
+                              color: red;
+                              font-size: $tamanoFuente;
+                              text-decoration: none;
+                              text-transform: uppercase;
+          
+                              &:hover {
+                                  color: white;
+                                  background-color: black;
+                               }
+                             }
+                          }
+        }
+      
+      
+      
+        
+      
+       /*MERCH.HTML*/
+       .remera {
+            height: 60%;
+           width: 85%;
+       }
+      
+       .merchTitulo {
+      font-family: 'Smooch Sans',  sans-serif;
+      font-size: 20vh;
+      width: 100%;
+       }
+      
+       .fondoMerch {
+          background-color: map-get($colores,blancoHumo);
+       
+      }
+      
+       /*CONTACTO.HTML*/
+      
+       .form{
+           width: 80%;
+           margin: auto;
+           padding: 10px 20px;
+           box-sizing: border-box;
+           margin-top: 40px;
+           } 
+ }
+      
+      
+      
+  
+@media screen and (min-width: 1024px) {
+  
+  
+.carousel-inner {
+  height: 100vh;
+}
+
+  .nav-link {
+      transition: 0.2s;
+  }
+
+  .nav-link:hover {
+      background-color: red;
+  }
+  
+  .navbar-nav {
+      margin-left: 400px;
+  }      
+
+  .twitter {
+    width: 100%;
+  }
+  
+
+  #yt {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 10px;
+      padding: 10px 0 0 100px;
+      margin-bottom: 20vh;
+      
+  }
+  
+  #contacto {
+      text-decoration: none;
+      color: red;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+
+  .seguinos {
+
+      margin: 20px;
+      font-family: 'Anton', sans-serif;
+
+      font-family: 'Barlow Condensed', sans-serif;
+  
+      font-family: 'Bebas Neue', cursive;
+  
+      font-family: 'Oswald', sans-serif;
+  
+      font-family: 'Roboto', sans-serif;
+  }
+  
+  
+  /*NOTICIAS.HTML*/
+  .flexnoticias {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;     
+}
+
+@mixin recuadroNoticias ($fondo,$color) {
+background-color: $fondo;
+color: $color;
+height: 100vh;
+width: 30%;
+margin-top: 5vh;
+text-align: center;
+
+}
+
+.noticia {
+@include recuadroNoticias(#000,#ffff)
+}
+
+.noticia2{
+@include recuadroNoticias(#808080,#ffff)
+}
+
+.noticia3 {
+@include recuadroNoticias(#000,#ffff)
+}
+
+
+
+.noticiasTitulo {
+font-family: 'Smooch Sans',  sans-serif;
+font-size: 200px;
+width: 100%;
+ }
+
+.noticiaFoto {
+  width: 100%;
+}
+
+/* DISCOGRAFIA.HTML*/
+
+.table {
+  width: 70%;
+}
+
+.spotify {
+  width: 70%;
+}
+
+ /*PROXIMASFECHAS.HTML*/
+ 
+ .foto3 { 
+    width: 100%;
+   }
+   
+     .fechasflex {
+        display: flex;
+       flex-direction: row;
+       justify-content: space-evenly;
+       flex-wrap: wrap;
+    
+            .entradas {
+                text-align: center;
+                box-shadow: $estiloCaja;
+                margin: $margenCaja;
+             .banner {
+                   width: 100%;
+                   height: 500px;
+                 }
+                    a {
+                        color: red;
+                        font-size: $tamanoFuente;
+                        text-decoration: none;
+                        text-transform: uppercase;
+    
+                        &:hover {
+                            color: white;
+                            background-color: black;
+                         }
+                        }
+                    }
+  }
+
+
+
+  
+
+ /*MERCH.HTML*/
+ .remera {
+      height: 60%;
+     width: 85%;
+ }
+
+ .merchTitulo {
+font-family: 'Smooch Sans',  sans-serif;
+font-size: 200px;
+width: 100%;
+ }
+
+ .fondoMerch {
+    background-color: map-get($colores,blancoHumo);
+ 
+}
+
+ /*CONTACTO.HTML*/
+
+ .form{
+     width: 450px;
+     margin: auto;
+     padding: 10px 20px;
+     box-sizing: border-box;
+     margin-top: 40px;
+     } 
+     
+     
+ input {
+     width: 100%;
+ }
+}
+
+
+
