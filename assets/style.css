@@ -10,14 +10,11 @@
 }
 
 @media screen and (max-width: 767px) {
-  .carousel-inner {
-    height: 100vh;
-  }
   .nav-link {
     transition: 0.2s;
   }
   .nav-link:hover {
-    background-color: red;
+    background-color: grey;
   }
   .navbar-nav {
     margin-left: 400px;
@@ -54,36 +51,42 @@
     font-family: 'Roboto', sans-serif;
   }
   /*NOTICIAS.HTML*/
+  /*NOTICIAS.HTML*/
   .flexnoticias {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
   }
   .noticia {
     background-color: #000;
     color: #ffff;
-    height: 120vh;
-    width: 70%;
+    height: 130vh;
+    width: 85%;
     margin-top: 5vh;
     text-align: center;
   }
   .noticia2 {
-    background-color: #808080;
+    background-color: #000;
     color: #ffff;
-    height: 120vh;
-    width: 70%;
+    height: 130vh;
+    width: 85%;
     margin-top: 5vh;
     text-align: center;
   }
   .noticia3 {
     background-color: #000;
     color: #ffff;
-    height: 120vh;
-    width: 70%;
+    height: 130vh;
+    width: 85%;
     margin-top: 5vh;
     text-align: center;
+  }
+  h5 {
+    margin-top: 5vh;
+  }
+  p {
+    margin-top: 3vh;
   }
   .noticiasTitulo {
     font-family: 'Smooch Sans',  sans-serif;
@@ -133,6 +136,7 @@
   .remera {
     height: 60%;
     width: 85%;
+    border: solid 3px black;
   }
   .merchTitulo {
     font-family: 'Smooch Sans',  sans-serif;
@@ -157,7 +161,7 @@
     transition: 0.2s;
   }
   .nav-link:hover {
-    background-color: red;
+    background-color: grey;
   }
   .navbar-nav {
     margin-left: 400px;
@@ -208,7 +212,7 @@
     text-align: center;
   }
   .noticia2 {
-    background-color: #808080;
+    background-color: #000;
     color: #ffff;
     height: 130vh;
     width: 85%;
@@ -222,6 +226,12 @@
     width: 85%;
     margin-top: 5vh;
     text-align: center;
+  }
+  h5 {
+    margin-top: 5vh;
+  }
+  p {
+    margin-top: 3vh;
   }
   .noticiasTitulo {
     font-family: 'Smooch Sans',  sans-serif;
@@ -271,6 +281,7 @@
   .remera {
     height: 60%;
     width: 85%;
+    border: solid 3px black;
   }
   .merchTitulo {
     font-family: 'Smooch Sans',  sans-serif;
@@ -298,7 +309,7 @@
     transition: 0.2s;
   }
   .nav-link:hover {
-    background-color: red;
+    background-color: grey;
   }
   .navbar-nav {
     margin-left: 400px;
@@ -328,43 +339,51 @@
     font-family: 'Roboto', sans-serif;
   }
   /*NOTICIAS.HTML*/
-  .flexnoticias {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-  }
-  .noticia {
-    background-color: #000;
-    color: #ffff;
-    height: 100vh;
-    width: 30%;
-    margin-top: 5vh;
-    text-align: center;
-  }
-  .noticia2 {
-    background-color: #808080;
-    color: #ffff;
-    height: 100vh;
-    width: 30%;
-    margin-top: 5vh;
-    text-align: center;
-  }
-  .noticia3 {
-    background-color: #000;
-    color: #ffff;
-    height: 100vh;
-    width: 30%;
-    margin-top: 5vh;
-    text-align: center;
-  }
   .noticiasTitulo {
     font-family: 'Smooch Sans',  sans-serif;
     font-size: 200px;
     width: 100%;
   }
+  .flexnoticias {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .flexnoticias .noticia {
+    background-color: #000;
+    color: #ffff;
+    height: 70vh;
+    width: 80%;
+    margin-top: 5vh;
+    text-align: center;
+  }
+  .flexnoticias .noticia2 {
+    background-color: #000;
+    color: #fff;
+    height: 70vh;
+    width: 80%;
+    margin-top: 5vh;
+    text-align: center;
+  }
+  .flexnoticias .noticia3 {
+    background-color: #000;
+    color: #ffff;
+    height: 70vh;
+    width: 80%;
+    margin-top: 5vh;
+    text-align: center;
+  }
+  .flexnoticias h5 {
+    margin-top: 5vh;
+  }
+  .flexnoticias p {
+    margin-top: 9vh;
+    margin-left: 10%;
+  }
   .noticiaFoto {
-    width: 100%;
+    width: 40%;
+    height: 100%;
+    float: left;
   }
   /* DISCOGRAFIA.HTML*/
   .table {
@@ -406,6 +425,7 @@
   .remera {
     height: 60%;
     width: 85%;
+    border: solid 3px black;
   }
   .merchTitulo {
     font-family: 'Smooch Sans',  sans-serif;

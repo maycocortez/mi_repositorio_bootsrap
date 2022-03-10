@@ -18,16 +18,14 @@
 @media screen and (max-width: 767px) {
 
 
-  .carousel-inner {
-    height: 100vh;
-  }
-  
+
     .nav-link {
         transition: 0.2s;
     }
   
     .nav-link:hover {
-        background-color: red;
+        background-color:grey;
+        
     }
     
     .navbar-nav {
@@ -79,44 +77,45 @@
     
     /*NOTICIAS.HTML*/
   
-    .flexnoticias {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        align-items: center;     
-    }
-    .noticia{
-      background-color: #000;
-      color: #ffff;
-      height: 120vh;
-      width: 70%;
+        /*NOTICIAS.HTML*/
+        .flexnoticias {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-evenly;
+          align-items: center;     
+      }
+      
+      @mixin recuadroNoticias ($fondo,$color) {
+      background-color: $fondo;
+      color: $color;
+      height: 130vh;
+      width: 85%;
       margin-top: 5vh;
       text-align: center;
       
-    }
-    
-    .noticia2 {
-      background-color: #808080;
-      color: #ffff;
-      height: 120vh;
-      width: 70%;
-      margin-top: 5vh;
-      text-align: center;
       
-     
-    }
-    
-    .noticia3 {
-      background-color: #000;
-      color: #ffff;
-      height: 120vh;
-      width: 70%;
-      margin-top: 5vh;
-      text-align: center;
-     
-    }
-  
+      }
+      
+      .noticia {
+      @include recuadroNoticias(#000,#ffff)
+      }
+      
+      .noticia2{
+      @include recuadroNoticias(#000,#ffff)
+      }
+      
+      .noticia3 {
+      @include recuadroNoticias(#000,#ffff)
+      }
+
+      h5 {
+        margin-top: 5vh;
+      }
+      p{
+        margin-top: 3vh;
+      
+      }
+
   
     .noticiasTitulo {
   font-family: 'Smooch Sans',  sans-serif;
@@ -181,6 +180,7 @@
    .remera {
         height: 60%;
        width: 85%;
+       border: solid 3px black;
    }
 
   
@@ -215,7 +215,7 @@
         }
       
         .nav-link:hover {
-            background-color: red;
+            background-color: grey;
         }
         
         .navbar-nav {
@@ -288,12 +288,21 @@
       }
       
       .noticia2{
-      @include recuadroNoticias(#808080,#ffff)
+      @include recuadroNoticias(#000,#ffff)
       }
       
       .noticia3 {
       @include recuadroNoticias(#000,#ffff)
       }
+
+      h5 {
+        margin-top: 5vh;
+      }
+      p{
+        margin-top: 3vh;
+      
+      }
+
       
       
       
@@ -358,6 +367,7 @@
        .remera {
             height: 60%;
            width: 85%;
+           border: solid 3px black;
        }
       
        .merchTitulo {
@@ -397,7 +407,7 @@
   }
 
   .nav-link:hover {
-      background-color: red;
+      background-color: grey;
   }
   
   .navbar-nav {
@@ -441,45 +451,53 @@
   
   
   /*NOTICIAS.HTML*/
+  
+  .noticiasTitulo {
+    font-family: 'Smooch Sans',  sans-serif;
+    font-size: 200px;
+    width: 100%;
+   }
+
+  @mixin recuadroNoticias ($fondo,$color) {
+    background-color: $fondo;
+    color: $color;
+    height: 70vh;
+    width: 80%;
+    margin-top: 5vh;
+    text-align: center;
+    }
+    
   .flexnoticias {
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;     
-}
-
-@mixin recuadroNoticias ($fondo,$color) {
-background-color: $fondo;
-color: $color;
-height: 100vh;
-width: 30%;
-margin-top: 5vh;
-text-align: center;
-
-}
-
-.noticia {
-@include recuadroNoticias(#000,#ffff)
-}
-
-.noticia2{
-@include recuadroNoticias(#808080,#ffff)
-}
-
-.noticia3 {
-@include recuadroNoticias(#000,#ffff)
+    flex-direction: column;
+    align-items: center;  
+    
+        .noticia {
+          @include recuadroNoticias(#000,#ffff)
+          }
+          
+          .noticia2{
+          @include recuadroNoticias(#000,#fff)
+          }
+          
+          .noticia3 {
+          @include recuadroNoticias(#000,#ffff)
+          }  
+          h5 {
+            margin-top: 5vh;
+          }
+          p{
+            margin-top: 9vh;
+            margin-left: 10%;
+          }
 }
 
 
-
-.noticiasTitulo {
-font-family: 'Smooch Sans',  sans-serif;
-font-size: 200px;
-width: 100%;
- }
 
 .noticiaFoto {
-  width: 100%;
+  width: 40%;
+  height: 100%;
+  float: left;
 }
 
 /* DISCOGRAFIA.HTML*/
@@ -534,6 +552,7 @@ width: 100%;
  .remera {
       height: 60%;
      width: 85%;
+     border: solid 3px black;
  }
 
  .merchTitulo {
